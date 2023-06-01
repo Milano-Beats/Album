@@ -10,7 +10,7 @@
 			body{
 				background: linear-gradient(to left, rgb(67, 67, 67),white , rgb(67, 67, 67));
 			}
-			#container{
+			.container{
 				width:1200px;
 				height:auto;
 				background-color:rgb(231, 231, 231);
@@ -125,22 +125,27 @@
 			}
 			}
 			@media screen and (max-width:930px){
-				body{
-					
-					height: auto;
+				#main {
+  					width: 930px;
+    				height: 1700px;
+    				background-color: rgb(51, 51, 51);
+    				margin: 10px auto 0px;
+    				border-radius: 4px 4px 0px 0px;
 				}
-				.container{
-					width: 400px;
-					height: auto;
+				#header{
+					width: 930px;
+					margin: 0 auto;
 				}
-				
+				#headpicture{
+					margin-top: -100px;
+				}
 			}
 		</style>
 	</head>
 
 	<body>
 
-		<div id="container">
+		<div class="container">
 			<div id=header>
 				<b><p id="headtext">Milano Beats</p></b>
 				<img id="headpicture" src="Mil white.jpg" alt="No picture">
